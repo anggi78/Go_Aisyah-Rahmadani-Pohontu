@@ -19,3 +19,4 @@ Zero value tipe data golang :
 
 ## Operator, Expression, Control Structure (Branching, Looping)
 Operand merupakan bagian paling sederhana dari expression seperti konstanta, sedangkan operator merupakan simbol yang digunakan dalam proses operasi.
+Branching (percabangan), dapat menggunakan keyword `if, else if, else` atau `switch case`. Looping (perulangan) menggunakan keyword `for`, `continue`, dan `break`. 
