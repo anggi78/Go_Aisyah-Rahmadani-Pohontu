@@ -6,13 +6,13 @@ func main() {
 		// Mencetak Angka
 	for angka := 1; angka < 101; angka++ {
 		if (angka%3 == 0) {
-			fmt.Println("Fizz")
+			fmt.Print(" Fizz ")
 		} else if (angka%5 == 0) {
-			fmt.Println("Buzz")
+			fmt.Print(" Buzz ")
 		} else if (angka > 101) {
 			break
 		} else {
-			fmt.Println(angka)
+			fmt.Print(angka, " ")
 		}
 	}
 

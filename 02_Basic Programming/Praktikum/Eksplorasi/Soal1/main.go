@@ -1,20 +1,24 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
 func main() {
-	var input string
-	fmt.Print("Masukkan kata atau frase: ")
-	fmt.Scan(&input)
-	fmt.Println("Captured: ", input)
+	reader := bufio.NewReader(os.Stdin)
+
+	fmt.Print("Masukkan kata: ")
+	input, _ := reader.ReadString('\n')
+	input = strings.TrimSpace(input)
+	fmt.Println("Captured:", input)
 
 	if isPalindrome(input) {
-		fmt.Println("Kata tersebut adalah palindrom.")
+		fmt.Println("Palindrom.")
 	} else {
-		fmt.Println("Kata tersebut bukan palindrom.")
+		fmt.Println("Bukan Palindrom.")
 	}
 }
 
