@@ -4,5 +4,5 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello world")
-	fmt.Println("Mengubah")
+	fmt.Println("do conflict management")
 }
