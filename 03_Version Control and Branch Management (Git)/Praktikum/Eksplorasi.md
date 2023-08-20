@@ -13,4 +13,4 @@
 3.	Lakukan code review pada github yang kalian kumpulkan.
   **Jawab:**
   ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/code review.png> "Code Review")
-  ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/code review 2.png> "Code Review")
+  ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/code review 2.jpg> "Code Review")
