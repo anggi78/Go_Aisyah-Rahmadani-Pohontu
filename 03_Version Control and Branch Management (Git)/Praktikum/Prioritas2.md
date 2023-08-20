@@ -7,6 +7,6 @@
   **Jawab:**
   ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/pull request.png> "Code Review")
   ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/pull request 2.png> "Code Review")
-  ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/pull request 3.png> "Code Review")
-  ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/pull request 4.png> "Code Review")
+  ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/pull resquest 3.png> "Code Review")
+  ![Code Review](</03_Version Control and Branch Management (Git)/Screenshot/pull resquest 4.png> "Code Review")
 
