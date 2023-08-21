@@ -1,6 +1,7 @@
 # Time Complexity and Space Complexity
 
 **Time Complexity**
+
 Penggunaan kompleksitas waktu memudahkan estimasi waktu eksekusi program dengan melihat jumlah maksimum operasi primitif yang mungkin dilakukan. Operasi primitif termasuk penambahan, perkalian, penugasan, dan lainnya. Operasi yang paling sering dilakukan disebut operasi dominan, sementara beberapa operasi lainnya bisa diabaikan.
 
 **Comparison of Different Time Complexities**
@@ -11,9 +12,11 @@ Penggunaan kompleksitas waktu memudahkan estimasi waktu eksekusi program dengan 
 5. Quadratic time - O(n^2), Ketika menghitung kompleksitas, fokus pada istilah yang tumbuh paling cepat, jadi abaikan konstanta dan istilah lainnya. Hasilnya adalah kompleksitas waktu kuadrat. Terkadang, kompleksitas juga bergantung pada lebih banyak variabel.
 
  **Exponential and Factorial Time**
+ 
  Ada jenis kompleksitas waktu lain, seperti kompleksitas faktorial O(n!) dan kompleksitas eksponensial O(2^n). Dimanamhanya cocok untuk masalah dengan nilai n yang sangat kecil karena terlalu lambat jika digunakan untuk nilai n yang besar.
 
 **Space Complexity**
+
 Batasan memori memberikan info tentang kompleksitas ruang yang diharapkan. Perkirakan jumlah variabel yang boleh dideklarasikan. Singkatnya, jumlah variabel tetap berarti kompleksitas ruang tetap.
 
 
