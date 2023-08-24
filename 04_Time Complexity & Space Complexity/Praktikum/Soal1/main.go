@@ -16,7 +16,6 @@ func main() {
 }
 
 func prima(number int) bool {
-	// Uji faktor prima hingga akar kuadrat dari number
 	for i := 2; i*i <= number; i++ {
 		if number%i == 0 || number%(i+2) == 0 {
 			return false
