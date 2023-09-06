@@ -2,20 +2,19 @@ package main
 
 import "fmt"
 
-func fibonacci(n int) int {
-	if n <= 1 {
-		return n
+func fibonacci(number int) int {
+	fib := make([]int, number+1)
+
+	fib[0] = 0
+	if number > 0 {
+		fib[1] = 1
 	}
 
-	fib0, fib1 := 0, 1
-	result := 0
-
-	for i := 2; i <= n; i++ {
-		result = fib0 + fib1
-		fib0, fib1 = fib1, result
+	for i := 2; i <= number; i++ {
+		fib[i] = fib[i-1] + fib[i-2]
 	}
-
-	return result
+	
+	return fib[number]
 }
 
 func main() {
