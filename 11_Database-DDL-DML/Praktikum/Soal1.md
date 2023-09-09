@@ -6,4 +6,4 @@
 4. Sistem dapat mencatat detail transaksi pembelian dari pelanggan.
 
 Jawab:
-![alt text](/Screenshot/Soal1.png)
+ ![Code Review](</Screenshot/Soal1.png> "Code Review")
