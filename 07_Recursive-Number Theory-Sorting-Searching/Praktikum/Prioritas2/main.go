@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func playingDomino(cards [][]int, deck []int) interface{} {
 	for _, card := range cards {
