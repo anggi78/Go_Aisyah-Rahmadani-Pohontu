@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "bd4f4360-1c52-41ad-9e2c-74c98d2e5ac1",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23382236"
+	},
+	"item": [
+		{
+			"name": "Rest API Golang",
+			"item": [
+				{
+					"name": "Skenario1",
+					"item": [
+						{
+							"name": "get all post",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://jsonplaceholder.typicode.com/posts"
+							},
+							"response": []
+						},
+						{
+							"name": "get post by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://jsonplaceholder.typicode.com/posts/3"
+							},
+							"response": []
+						},
+						{
+							"name": "post new postingan",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"userId\": 178,\r\n    \"id\": 101,\r\n    \"title\": \"et ea vero quia laudantium autem\",\r\n    \"body\": \"delectus reiciendis molestiae occaecatii\"\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://jsonplaceholder.typicode.com/posts"
+							},
+							"response": []
+						},
+						{
+							"name": "delete post by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "https://jsonplaceholder.typicode.com/posts/1 "
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Skenario2",
+					"item": [
+						{
+							"name": "get client",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client"
+							},
+							"response": []
+						},
+						{
+							"name": "post client",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT01\",\r\n  \"client_secret\": \"SECRET01\",\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client"
+							},
+							"response": []
+						},
+						{
+							"name": "delete client",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1"
+							},
+							"response": []
+						},
+						{
+							"name": "put client",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"client_id\": 1234,\r\n  \"client_key\": \"CLIENT01\",\r\n  \"client_secret\": \"SECRET01\",\r\n  \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
