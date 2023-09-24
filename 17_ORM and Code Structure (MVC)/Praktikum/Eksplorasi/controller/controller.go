@@ -87,41 +87,19 @@ func UpdateUserController(c echo.Context) error {
 // blogs
 func GetBlogsController(c echo.Context) error {
 	var blogs []model.Blog
-	if err := config.DB.Find(&blogs).Error; err != nil {
+	if err := config.DB.Preload("User").Find(&blogs).Error; err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
-	for i, blog := range blogs {
-		var user model.User
-		if err := config.DB.First(&user, blog.UserID).Error; err != nil {
-			return echo.NewHTTPError(http.StatusInternalServerError, "Failed to get user data")
-		}
-		blogs[i].User = &user
-	}
-
-	var responseBlogs []map[string]interface{}
-	for _, blog := range blogs {
-		user := map[string]interface{}{
-			"name": blog.User.Name,
-		}
-
-		responseBlogs = append(responseBlogs, map[string]interface{}{
-			"ID":      blog.ID,
-			"Title":   blog.Title,
-			"Content": blog.Content,
-			"User":    user,
-		})
-	}
-
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"blogs": responseBlogs,
+		"blogs": blogs,
 	})
 }
 
 func GetBlogController(c echo.Context) error {
 	blogID := c.Param("id")
 	var blog model.Blog
-	if err := config.DB.First(&blog, blogID).Error; err != nil {
+	if err := config.DB.Preload("User").First(&blog, blogID).Error; err != nil {
 		return echo.NewHTTPError(http.StatusNotFound, "Blog not found")
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
@@ -135,24 +113,17 @@ func CreateBlogController(c echo.Context) error {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 
-	if err := config.DB.Create(&blog).Error; err != nil {
-		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
-	}
-
 	var user model.User
-	if err := config.DB.First(&user, blog.UserID).Error; err != nil {
+	if err := config.DB.Where("id = ?", blog.UserID).First(&user).Error; err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, "Wrong UserID")
 	}
 
-	userName := user.Name
+	if err := config.DB.Save(&blog).Error; err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
 	return c.JSON(http.StatusOK, map[string]interface{}{
-		"blog": map[string]interface{}{
-			"title":   blog.Title,
-			"content": blog.Content,
-			"blog": map[string]interface{}{
-				"name": userName,
-			},
-		},
+		"message": "success create blog",
 	})
 }
 
@@ -184,8 +155,12 @@ func UpdateBlogController(c echo.Context) error {
 
 	blog.Title = updateBlog.Title
 	blog.Content = updateBlog.Content
+	blog.UserID = updateBlog.UserID
 
 	if err := config.DB.Save(&blog).Error; err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+	if err := config.DB.Preload("User").Find(&blog, blogID).Error; err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
