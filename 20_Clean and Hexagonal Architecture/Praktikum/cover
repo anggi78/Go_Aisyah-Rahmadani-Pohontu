@@ -1,0 +1,27 @@
+mode: set
+belajar-go-echo/controller/user.go:14.74,18.2 1 1
+belajar-go-echo/controller/user.go:20.61,22.16 2 1
+belajar-go-echo/controller/user.go:22.16,26.3 1 0
+belajar-go-echo/controller/user.go:27.2,29.4 1 1
+belajar-go-echo/controller/user.go:32.60,34.37 2 1
+belajar-go-echo/controller/user.go:34.37,38.3 1 0
+belajar-go-echo/controller/user.go:39.2,39.56 1 1
+belajar-go-echo/controller/user.go:39.56,43.3 1 0
+belajar-go-echo/controller/user.go:44.2,46.4 1 1
+belajar-go-echo/controller/user.go:49.59,51.37 2 0
+belajar-go-echo/controller/user.go:51.37,55.3 1 0
+belajar-go-echo/controller/user.go:57.2,58.16 2 0
+belajar-go-echo/controller/user.go:58.16,62.3 1 0
+belajar-go-echo/controller/user.go:64.2,66.4 1 0
+belajar-go-echo/usecase/user_usecase.go:13.78,17.2 1 1
+belajar-go-echo/usecase/user_usecase.go:19.59,21.16 2 1
+belajar-go-echo/usecase/user_usecase.go:21.16,23.3 1 0
+belajar-go-echo/usecase/user_usecase.go:24.2,24.12 1 1
+belajar-go-echo/usecase/user_usecase.go:27.60,29.16 2 1
+belajar-go-echo/usecase/user_usecase.go:29.16,31.3 1 0
+belajar-go-echo/usecase/user_usecase.go:32.2,32.19 1 1
+belajar-go-echo/usecase/user_usecase.go:35.68,37.16 2 0
+belajar-go-echo/usecase/user_usecase.go:37.16,39.3 1 0
+belajar-go-echo/usecase/user_usecase.go:41.2,42.16 2 0
+belajar-go-echo/usecase/user_usecase.go:42.16,44.3 1 0
+belajar-go-echo/usecase/user_usecase.go:46.2,46.19 1 0
