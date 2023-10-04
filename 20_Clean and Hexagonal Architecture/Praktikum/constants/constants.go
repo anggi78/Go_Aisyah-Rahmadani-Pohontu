@@ -1,3 +1,3 @@
 package constants
 
-const  	SECRET_JWT = "123"
+const  	JWt_SECRET = "123"

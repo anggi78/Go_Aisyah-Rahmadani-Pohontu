@@ -10,7 +10,7 @@ import (
 
 func NewRouter(e *echo.Echo, uc *controller.UserController) {
 	AppJWT := e.Group("/users")
-	AppJWT.Use(middleware.JWT([]byte(constants.SECRET_JWT)))
+	AppJWT.Use(middleware.JWT([]byte(constants.JWt_SECRET)))
 	AppJWT.GET("", uc.GetAllUsers)
 	e.POST("/users", uc.CreateUser)
 }
