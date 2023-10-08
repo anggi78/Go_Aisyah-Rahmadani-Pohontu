@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: task:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: LE7HNDbN@f#Mp44
+      MYSQL_DATABASE: database_anggi78
+    ports:
+      - "3306:3306"
