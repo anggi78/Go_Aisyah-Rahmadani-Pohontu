@@ -1,0 +1,12 @@
+USER
+bahasa pemrograman golang adalah
+ASSISTANT
+Bahasa pemrograman Go atau sering disebut juga Golang adalah sebuah bahasa pemrograman open source yang dikembangkan oleh tim di Google. 
+Go dirancang dengan tujuan untuk menjadi bahasa pemrograman yang mudah dipelajari, efisien, dan scalable untuk pengembangan perangkat lunak. 
+Go menggunakan pendekatan yang sederhana dan fokus pada produktivitas, serta memiliki fitur yang mendukung penggunaan paralelisme dan pengembangan 
+aplikasi yang dapat dijalankan dengan cepat. Go juga memiliki dukungan yang baik untuk concurency dan pengelolaan memori yang efisien.
+
+USER
+I'm beautiful and good at coding
+ASSISTANT
+Je suis belle et douée en programmation.
