@@ -21,10 +21,6 @@ func (uc *laptopUsecase) Recommend(userInput, brand, ram, cpu, screenSize, openA
 	model := openai.GPT3Dot5Turbo
 	messages := []openai.ChatCompletionMessage{
 		{
-			Role:    openai.ChatMessageRoleSystem,
-			Content: "Hello, allow me to introduce myself as a system for laptop recommendations.",
-		},
-		{
 			Role:    openai.ChatMessageRoleUser,
 			Content: userInput,
 		},
